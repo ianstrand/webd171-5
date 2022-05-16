@@ -63,7 +63,7 @@ class App extends React.Component {
               humidity,
               main,
               description,
-              icon: 'http://openweathermap.org/img/wn/' + icon + '@2x.png',
+              icon: 'https://openweathermap.org/img/wn/' + icon + '@2x.png',
               lon,
               lat,
               timezone,
@@ -127,7 +127,7 @@ class App extends React.Component {
     } else {
 
        const { name, country, sunrise, sunset, speed, deg, temp, temp_min, temp_max, feels_like, humidity, main, description, icon, lon, lat, timezone, date, time, degreesDirection } = data;
-     
+
        return (
           <div className='weatherApp'>
             <Helmet>
@@ -183,7 +183,7 @@ class App extends React.Component {
                     <p>You are viewing the weather in the following time zone: < /p>
                     <p>{ timezone }.< /p>
                   </Col>
-                </Row>  
+                </Row>
               </Container>
             </footer>
           </div>
